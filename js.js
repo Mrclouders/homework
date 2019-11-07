@@ -4,12 +4,12 @@ function shoppingList() {
   $('#js-shopping-list-form').submit(function(event){
     event.preventDefault();
     
-    const qwe = $('.js-shopping-list-entry').val();
+    const inputValue = $('#shopping-list-entry').val();
     
     
-    if (qwe !== "") {
+    if (inputValue !== "") {
       $('.shopping-list').append(`<li>
-        <span class="shopping-item">${qwe}</span>
+        <span class="shopping-item">${inputValue}</span>
         <div class="shopping-item-controls">
           <button class="shopping-item-toggle">
             <span class="button-label">check</span>
